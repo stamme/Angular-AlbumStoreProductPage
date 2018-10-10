@@ -4,6 +4,8 @@ import { Response } from '@angular/http/src/static_response';
 
 import { ProductService } from '../product.service';
 
+import { Album } from '../album';
+
 @Component({
   selector: 'app-product-description',
   templateUrl: './product-description.component.html',
@@ -11,7 +13,7 @@ import { ProductService } from '../product.service';
 })
 export class ProductDescriptionComponent implements OnInit {
 
-  albumInfo;
+  albumInfo: Album;
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
